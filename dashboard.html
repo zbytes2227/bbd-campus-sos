@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus SOS Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-6 text-center">📊 Campus SOS Dashboard</h1>
+
+    <!-- Users Table -->
+    <div class="bg-white rounded-2xl shadow p-4 mb-8 overflow-auto">
+      <h2 class="text-xl font-semibold mb-4">👥 Users</h2>
+      <table class="min-w-full text-sm text-left">
+        <thead>
+          <tr class="bg-gray-200 text-gray-700">
+            <th class="py-2 px-4">Name</th>
+            <th class="py-2 px-4">Phone</th>
+            <th class="py-2 px-4">Emergency Contact</th>
+            <th class="py-2 px-4">Signup Time</th>
+          </tr>
+        </thead>
+        <tbody id="usersTable" class="bg-white divide-y divide-gray-200"></tbody>
+      </table>
+    </div>
+
+    <!-- SOS Alerts Table -->
+    <div class="bg-white rounded-2xl shadow p-4 overflow-auto">
+      <h2 class="text-xl font-semibold mb-4">🚨 SOS Alerts</h2>
+      <table class="min-w-full text-sm text-left">
+        <thead>
+          <tr class="bg-red-100 text-red-700">
+            <th class="py-2 px-4">Name</th>
+            <th class="py-2 px-4">Phone</th>
+            <th class="py-2 px-4">Location</th>
+            <th class="py-2 px-4">Timestamp</th>
+          </tr>
+        </thead>
+        <tbody id="alertsTable" class="bg-white divide-y divide-gray-200"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const apiUrl = "https://___MY___API____/getDetails"; // Replace with your deployed function URL
+
+    async function loadDashboardData() {
+      try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+
+        const usersTbody = document.getElementById("usersTable");
+        const alertsTbody = document.getElementById("alertsTable");
+
+        data.users.forEach(user => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td class="py-2 px-4">${user.name}</td>
+            <td class="py-2 px-4">${user.phone}</td>
+            <td class="py-2 px-4">${user.emergencyContact || '-'}</td>
+            <td class="py-2 px-4">${new Date(user.createdAt._seconds * 1000).toLocaleString()}</td>
+          `;
+          usersTbody.appendChild(row);
+        });
+
+        data.sosAlerts.forEach(alert => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td class="py-2 px-4">${alert.name}</td>
+            <td class="py-2 px-4">${alert.phone}</td>
+            <td class="py-2 px-4">
+              <a href="https://www.google.com/maps?q=${alert.latitude},${alert.longitude}" target="_blank" class="text-blue-500 underline">
+                View Map
+              </a>
+            </td>
+            <td class="py-2 px-4">${new Date(alert.timestamp._seconds * 1000).toLocaleString()}</td>
+          `;
+          alertsTbody.appendChild(row);
+        });
+      } catch (error) {
+        alert("Failed to load dashboard data.");
+        console.error("API Error:", error);
+      }
+    }
+
+    loadDashboardData();
+  </script>
+</body>
+</html>
