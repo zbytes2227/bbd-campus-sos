@@ -4,6 +4,14 @@ The **BBD Campus SOS App** is an emergency safety application designed specifica
 
 ---
 
+ ### Click the button below to download and install the latest version of the BBD Campus SOS App:
+
+[![Download App](https://img.shields.io/badge/⬇️%20Download%20App-APK-blue?style=for-the-badge&logo=android)](https://github.com/zbytes2227/bbd-campus-sos/blob/main/campus_sos_app.apk)
+
+> 📦 Make sure to allow installation from unknown sources if prompted during installation.
+
+---
+
 ## 📱 Features
 
 - 🔐 **Student Registration**: Register your name and phone number in the app for identification.
@@ -19,14 +27,6 @@ The **BBD Campus SOS App** is an emergency safety application designed specifica
   🔗 [Security Dashboard (Admin Panel)](https://campusbbdsos.vercel.app/)
 
 ---
-
- ### Click the button below to download and install the latest version of the BBD Campus SOS App:
-
-[![Download App](https://img.shields.io/badge/⬇️%20Download%20App-APK-blue?style=for-the-badge&logo=android)](https://github.com/zbytes2227/bbd-campus-sos/blob/main/campus_sos_app.apk)
-
-> 📦 Make sure to allow installation from unknown sources if prompted during installation.
-
-
 
 ## 🛠️ Tech Stack
 
