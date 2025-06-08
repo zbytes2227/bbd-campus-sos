@@ -37,13 +37,10 @@ The **BBD Campus SOS App** is an emergency safety application designed specifica
 - **Vercel** – Hosting platform for the dashboard
 
  <p align="center">
-  <img src="https://github.com/user-attachments/assets/0ca2133a-51da-4645-83e3-bbcfb1957657" width="300"/>
-  <img src="https://github.com/user-attachments/assets/35b76dbb-d977-4e94-987a-8bf82a25d457" width="300"/>
+  <img src="https://github.com/user-attachments/assets/0ca2133a-51da-4645-83e3-bbcfb1957657" width="300"/> 
 </p>
 
-
-## 📱 Dashboard
-![image](https://github.com/user-attachments/assets/4ece2da1-eac8-4beb-881a-d30d8d5eb215)
+ 
 
 
 
