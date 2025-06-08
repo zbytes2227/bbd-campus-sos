@@ -36,8 +36,13 @@ The **BBD Campus SOS App** is an emergency safety application designed specifica
 - **Firebase Firestore** – Real-time database for storing SOS alerts
 - **Vercel** – Hosting platform for the dashboard
 
-![WhatsApp Image 2025-06-08 at 16 25 54_2a167770](https://github.com/user-attachments/assets/0ca2133a-51da-4645-83e3-bbcfb1957657)
-![WhatsApp Image 2025-06-08 at 16 25 55_be63cf5e](https://github.com/user-attachments/assets/35b76dbb-d977-4e94-987a-8bf82a25d457)
+ <p align="center">
+  <img src="https://github.com/user-attachments/assets/0ca2133a-51da-4645-83e3-bbcfb1957657" width="300"/>
+  <img src="https://github.com/user-attachments/assets/35b76dbb-d977-4e94-987a-8bf82a25d457" width="300"/>
+</p>
+
+
+## 📱 Dashboard
 ![image](https://github.com/user-attachments/assets/4ece2da1-eac8-4beb-881a-d30d8d5eb215)
 
 
