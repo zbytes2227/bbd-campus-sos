@@ -1,0 +1,45 @@
+# 🆘 BBD Campus SOS App
+
+The **BBD Campus SOS App** is an emergency safety application designed specifically for students of **Babu Banarasi Das**. It provides a quick and efficient way to send distress alerts to campus security, emergency contacts, and personal guardians — along with real-time location sharing.
+
+---
+
+## 📱 Features
+
+- 🔐 **Student Registration**: Register your name and phone number in the app for identification.
+- 📍 **Real-Time Location Sharing**: Shares your current GPS coordinates when an SOS is triggered.
+- 📤 **Instant Alerts**: Sends a WhatsApp message to:
+  - Campus **Security Head**
+  - Your **Emergency Contact**
+  - Your own number for self-record
+- 🧭 **Location Settings Prompt**: Automatically guides users to enable location services if turned off.
+- 📟 **Visual Feedback**: Animated SOS button with vibration feedback during alert dispatch.
+- 👮‍♂️ **Security Dashboard**: The security team can monitor all incoming SOS alerts on a live dashboard.
+
+  🔗 [Security Dashboard (Admin Panel)](https://campusbbdsos.vercel.app/)
+
+---
+
+ ### Click the button below to download and install the latest version of the BBD Campus SOS App:
+
+[![Download App](https://img.shields.io/badge/⬇️%20Download%20App-APK-blue?style=for-the-badge&logo=android)](https://github.com/zbytes2227/bbd-campus-sos/blob/main/campus_sos_app.apk)
+
+> 📦 Make sure to allow installation from unknown sources if prompted during installation.
+
+
+
+## 🛠️ Tech Stack
+
+### 📱 Mobile App
+- **Flutter** – Cross-platform UI toolkit for iOS and Android 
+- **Geolocator** – To fetch live location coordinates 
+- **Firebase Firestore** – Real-time database for storing SOS alerts
+- **Vercel** – Hosting platform for the dashboard
+
+![WhatsApp Image 2025-06-08 at 16 25 54_2a167770](https://github.com/user-attachments/assets/0ca2133a-51da-4645-83e3-bbcfb1957657)
+![WhatsApp Image 2025-06-08 at 16 25 55_be63cf5e](https://github.com/user-attachments/assets/35b76dbb-d977-4e94-987a-8bf82a25d457)
+![image](https://github.com/user-attachments/assets/4ece2da1-eac8-4beb-881a-d30d8d5eb215)
+
+
+
+THANK YOU
